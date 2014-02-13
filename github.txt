@@ -4,7 +4,7 @@ Hosting barato normal ---> / public_html / <--- FTP
 	index.php
 	images
 	eduardo.jpg
-www.estepario-funk.com
+www.Estepario_rocks.com
 
 SISTEMA DE CONTROL DE VERSIONES
 
