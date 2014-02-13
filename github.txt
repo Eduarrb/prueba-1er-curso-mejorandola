@@ -1,0 +1,23 @@
+FTP
+Transmisión de archivos
+Hosting barato normal ---> / public_html / <--- FTP
+	index.php
+	images
+	eduardo.jpg
+www.estepario-funk.com
+
+SISTEMA DE CONTROL DE VERSIONES
+
+SVN: Subversion / Mercurial / TFS / CVS / GIt
+Github
+1. Red social de programadores
+2. Web / Apps
+3. Mucho más facil
+
+===
+
+Repositorios de código GITHUB (master)
+1. Múltiples versiones del mismo código
+2. Cambios Delta
+3. Bse de datos atómica del código
+
