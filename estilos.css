@@ -1,3 +1,74 @@
+a {
+	color: #22BCE0;
+}
+
 body {
 	background: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+header {
+	background: #344B54;
+	color: white;
+	/*este overflow: hidden hace que los objetos 
+	flotantes se acomoden a la caja del header
+	sin salirce de su espacio*/
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+header figure {
+	float: left;
+}
+header h1 {
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-right: 70px;
+}
+header #avatar {
+	/*el absolute va funcionar con respecto
+	al body. Para que funcione en el mismo bloque
+	en su caja contenedora, osea header se pone relative*/
+	margin-top: 1.45em;
+	margin-right: 1em;
+	right: 0;
+	position: absolute;
+	top: 0;
+}
+header #avatar img {
+	/*border- radius = con "%" es mejor para darle el 
+	redondeado a la imagen*/
+	border-radius: 50%;
+	width: 55px;
+}
+
+header #logo img {
+	border-right: 1px solid white;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	width: 52px;
+}
+
+nav {
+	background: #80BCA3;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	/*con el float se sale de su caja contenedora*/
+	display: inline-block;
+	margin-right: 0.5em;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	/*background: red;*/
+	padding: 0.5em;
+	display: block;
 }
