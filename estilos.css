@@ -7,7 +7,29 @@ body {
 	font-family: Arial;
 	font-size: 16px;
 }
+footer {
+	background: #22BCE0;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
+}
+/*estos anidamientos se ahce para pegar el texto 
+en el footer*/
+footer p:first-child {
+	margin-bottom: 0;
+}
 
+footer p:last-child {
+	margin-top: 0;
+}
+
+footer p:last-child:after {
+	content: " -";
+}
+
+footer p:last-child:before {
+	content: "- ";
+}
 header {
 	background: #344B54;
 	color: white;
@@ -30,8 +52,8 @@ header #avatar {
 	/*el absolute va funcionar con respecto
 	al body. Para que funcione en el mismo bloque
 	en su caja contenedora, osea header se pone relative*/
-	margin-top: 1.45em;
-	margin-right: 1em;
+	margin-top: 0.5em;
+	margin-right: 0.5em;
 	right: 0;
 	position: absolute;
 	top: 0;
@@ -52,6 +74,7 @@ header #logo img {
 
 nav {
 	background: #80BCA3;
+	position: relative;
 }
 
 nav ul {
@@ -71,4 +94,90 @@ nav ul li a {
 	/*background: red;*/
 	padding: 0.5em;
 	display: block;
+}
+
+nav ul #publicar_nav {
+	position: absolute; /*hay que poner relative al nav para que funcione
+	su posisción*/
+	top: -0.1em;
+	right: 0;
+}
+
+nav ul #publicar_nav a {
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,1) 5px 5px 20px; /* rgba(los
+		3 primeros números son los colores, el 4to de 0 a 
+		1 % de transparencia) 1ro desplazamiento en el 
+eje X el 2do en el eje Y y el último para difuminación*/
+	font-style: italic;
+	padding: 0.6em 0.8em; /*cuando son dos el primero es 
+	arriba y abajo y el segundo a los lados*/
+	text-shadow: rgba(0,0,0,1) 2px 2px 5px;
+	
+}
+
+#contenido {
+	margin: 1em;
+}
+
+#contenido .item {
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 3em;
+	min-height: 128px;/*minimo alto para la caja*/
+	position: relative;
+}
+
+#contenido .item .autor_item {
+	color: #AAA;
+}
+
+#contenido .item .datos_item {
+	margin: 1em 1em 0 0;
+}
+#contenido .item .datos_item .fecha_item {
+	color: #AAA;
+	float: right;
+}
+#contenido .item .datos_item .tag_item {
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+#contenido .item .imagen_item {
+	float: left;
+	margin-right: 1em;
+}
+#contenido .item .imagen_item img {
+	width: 96px;
+}
+
+#contenido .item .titulo_item {
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 0;
+	padding: 1em 1em 0 0;
+}
+
+#contenido .item .titulo_item a {
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .votacion {
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	left: 3%;
+	margin-top: 3px;
+	padding: 0.5em 1em;
+	position: absolute;
+	right: 3%;
+	top: 100%;/*toma el 100% de su contenero proximo*/
+}
+
+#contenido .item .votacion .comentario_item, #contenido .item .votacion .guardar_item {
+	float: right;
 }
