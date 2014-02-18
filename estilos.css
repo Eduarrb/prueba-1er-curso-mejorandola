@@ -74,6 +74,8 @@ header #logo img {
 
 nav {
 	background: #80BCA3;
+	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
+	padding: 0 0.5em;
 	position: relative;
 }
 
@@ -170,12 +172,12 @@ eje X el 2do en el eje Y y el último para difuminación*/
 #contenido .item .votacion {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
-	left: 3%;
+	left: 1%;
 	margin-top: 3px;
-	padding: 0.5em 1em;
+	padding: 0.2em 0.5em;
 	position: absolute;
-	right: 3%;
 	top: 100%;/*toma el 100% de su contenero proximo*/
+	width: 95%;
 }
 
 #contenido .item .votacion .comentario_item, #contenido .item .votacion .guardar_item {
