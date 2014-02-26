@@ -1,249 +1,148 @@
-/*@font-face {
-    font-family: 'open_sansregular';
-    src: url('Fuentes/OpenSans-Regular-webfont.eot');
-    src: url('Fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Fuentes/OpenSans-Regular-webfont.woff') format('woff'),
-         url('Fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('Fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-/*la forma de arriba es para cuando la fuente 
-este guardada en el ordenador*/
-
-@font-face {
-	font-family: 'iconos';
-	src:url('Fuentes/iconos.eot?-5zcath');
-	src:url('Fuentes/iconos.eot?#iefix-5zcath') format('embedded-opentype'),
-		url('Fuentes/iconos.woff?-5zcath') format('woff'),
-		url('Fuentes/iconos.ttf?-5zcath') format('truetype'),
-		url('Fuentes/iconos.svg?-5zcath#iconos') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'iconos';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-pushpin:before {
-	content: "\e600";
-	margin-right: 0.8em;
-
-}
-.icon-estrella:before {
-	content: "\e601";
-	color: #FFBE2C;
-	margin-right: 0.4em;
-	position: relative;
-	top: 0.1em;
-}
-.icon-lapiz:before {
-	content: "\e602";
-}
-.icon-fe-abajo:before {
-	content: "\e603";
-	color: #DD4f24;
-}
-.icon-fe-arriba:before {
-	content: "\e604";
-}
-
-
-a {
+a
+{
 	color: #22BCE0;
 }
-
-body {
+body
+{
 	background: #EEEEEE;
-	font-family: "open sans";/*cuando son dos palabras 
-	tiene que ir entre comillas, fuente jalada de
-	de google web fonts*/
+	font-family: Arial;
 	font-size: 16px;
 }
-footer {
+footer
+{
 	background: #22BCE0;
-	text-align: center;
 	color: rgba(255,255,255,0.7);
 	padding: 1em;
-	/*si queremos centrar el texto con respecto 
-	al alto	ejem:
-	height:100px;
-	line-height:100px;*/
+	text-align: center;
 }
-/*estos anidamientos se ahce para pegar el texto 
-en el footer*/
-footer p:first-child {
+footer p:first-child
+{
 	margin-bottom: 0;
 }
-
-footer p:last-child {
+footer p:last-child
+{
 	margin-top: 0;
 }
-
-footer p:last-child:after {
+footer p:last-child:after
+{
 	content: " -";
 }
-
-footer p:last-child:before {
+footer p:last-child:before
+{
 	content: "- ";
 }
-header {
+header
+{
 	background: #344B54;
 	color: white;
-	/*este overflow: hidden hace que los objetos 
-	flotantes se acomoden a la caja del header
-	sin salirce de su espacio*/
-	overflow: hidden;
+	overflow: hidden;/*hace que las cajas flotantes
+	entren por causa del float*/
 	padding: 0.5em;
 	position: relative;
-	/*text-align: center;
-	margin: 0 auto;
-	width: 800px;*/
 }
-header figure {
+header figure
+{
 	float: left;
 }
-header h1 {
+header h1
+{
 	font-size: 1.2em;
 	font-weight: normal;
-	margin-right: 70px;
+	margin: 0 70px 0 0;
 }
-header #avatar {
-	/*el absolute va funcionar con respecto
-	al body. Para que funcione en el mismo bloque
-	en su caja contenedora, osea header se pone relative*/
-	margin-top: 0.5em;
-	margin-right: 0.5em;
+header #avatar
+{
+	margin: 0.5em 0.5em 0 0;
 	right: 0;
-	position: absolute;
+	position: absolute;/*position relative en el 
+	header para que se posicione en el contenedor 
+	del header*/
 	top: 0;
 }
-header #avatar img {
-	/*border- radius = con "%" es mejor para darle el 
-	redondeado a la imagen*/
+header #avatar img
+{
 	border-radius: 50%;
 	width: 55px;
 }
-/*se hara transisiones en esta parte*/
-header #logo {
-	/*-webkit-transform:rotate(90deg); 
-	-moz-transform:rotate(90deg);
-	-o-transform:rotate(90deg);
-	-ms-transform:rotate(90deg);*/
+header #logo img
+{
 	border-right: 1px solid white;
-	margin-right: 0.5em;
-}
-header #logo img {
-	
-	margin-right: 0.5em;
 	padding-right: 0.5em;
+	margin-right: 0.5em;
 	width: 52px;
-	
 }
-
-header #logo img:hover {
-	-webkit-transform:rotate(360deg);
-	-webkit-transition:.5s;/*efecto para la transición, 
-	si se coloca la transicion en el header #logo img {
-	el logo regresa a su posición*/
-}
-
-nav {
-	background: #80BCA3;
-	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
-	padding: 0 6em 0 0;
+nav 
+{
+	background: #20BCA3;
 	position: relative;
 }
-
-nav ul {
+nav ul
+{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
-nav ul li{
-	/*con el float se sale de su caja contenedora*/
-	display: inline-block;
-	margin-right: 0.5em;
+nav ul li
+{
+	display: inline-block;/*pone en linea vertical
+	a las cajas*/
+	margin: 0 0.5em 0 0;
 }
-nav ul li a {
+nav ul li a
+{
 	color: white;
-	text-decoration: none;
-	/*background: red;*/
+	display: block;/*para que el paddin de las cajas
+	tome el ancho del contenedor*/
 	padding: 0.5em;
-	display: block;
-	-webkit-transition:.3s;
-}
-
-nav ul li a:hover{
-	background: #343B54;
-}
-
-nav ul #publicar_nav {
-	position: absolute; /*hay que poner relative al nav para que funcione
-	su posisción*/
-	top: -0.1em;
-	right: 0;
-}
-
-nav ul #publicar_nav a {
+	text-decoration: none;
+ }
+nav ul #publicar_nav
+{
+ 	position: absolute;/*position relative al nav*/
+ 	right: 0;
+ 	top: -0.1em;
+ }
+nav ul #publicar_nav a
+{
 	background: #22BCE0;
-	border-radius: 5px;
-	box-shadow: rgba(0,0,0,1) 5px 5px 20px; /* rgba(los
-		3 primeros números son los colores, el 4to de 0 a 
-		1 % de transparencia) 1ro desplazamiento en el 
-eje X el 2do en el eje Y y el último para difuminación*/
-	font-style: italic;
-	padding: 0.6em 0.8em; /*cuando son dos el primero es 
-	arriba y abajo y el segundo a los lados*/
-	text-shadow: rgba(0,0,0,1) 2px 2px 5px;
-	
+ 	border-radius: 5px;
+ 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;/*entre ()
+ 	los 3 primeros son los colores, el 4to es la 
+ 	transparencia, fuera de los () 1ro eje x, 2do eje y
+ 	el 3ro difuminación */
+ 	font-style: italic;
+ 	padding: 0.6em 0.8em;/*1ro arriba y abajo, el 
+ 	2do a los costados*/
+ 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }
-
-
-
-aside {
-	display: none; /*el video no se muestra, 
-	para eso se utiliza media query */
+#contenido
+{
+ 	margin: 1em;
 }
-
-#contenido {
-	margin: 1em;
+#contenido .item
+{
+ 	background: white;
+ 	border-bottom: 3px solid #22BCE0;
+ 	margin-bottom: 3em;
+ 	min-height: 128px;/*para que la figura
+ 	caba en el contenedor*/
+ 	position: relative;
 }
-
-#contenido .item {
-	background: white;
-	border-bottom: 3px solid #22BCE0;
-	margin-bottom: 3em;
-	min-height: 128px;/*minimo alto para la caja*/
-	position: relative;
-}
-
-#contenido .item .autor_item {
+#contenido .item .autor_item
+{
 	color: #AAA;
 }
-
-#contenido .item .datos_item {
+#contenido .item .datos_item
+{
 	margin: 1em 1em 0 0;
 }
-#contenido .item .datos_item .fecha_item {
+#contenido .item .datos_item .fecha_item
+{
 	color: #AAA;
 	float: right;
 }
-#contenido .item .datos_item .tag_item {
+#contenido .item .datos_item .tag_item
+{
 	background: #F4502A;
 	border-radius: 0.5em;
 	color: white;
@@ -251,84 +150,41 @@ aside {
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido .item .imagen_item {
-	float: left;
-	margin-right: 1em;
+#contenido .item .imagen_item
+{
+ 	float: left;/*para que se pongan las demás
+ 	cajas al lado de la imagen*/
+ 	margin-right: 1em;
 }
-#contenido .item .imagen_item img {
+#contenido .item .imagen_item img
+{
 	width: 96px;
 }
-
-#contenido .item .titulo_item {
+#contenido .item .titulo_item
+{
 	font-size: 1.2em;
 	font-style: italic;
 	margin-bottom: 0;
 	padding: 1em 1em 0 0;
 }
-
-#contenido .item .titulo_item a {
+#contenido .item .titulo_item a
+{
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion {
+#contenido .item .votacion
+{
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
-	left: 1%;
+	left: 3%;
 	margin-top: 3px;
 	padding: 0.2em 0.5em;
-	position: absolute;
-	top: 100%;/*toma el 100% de su contenero proximo*/
-	width: 95%;
+	position: absolute; /*relative #contenido .item*/
+	right: 3%;
+	top: 100%;/*toma todo el contendor para 
+	su posicion*/
 }
-
-#contenido .item .votacion a {
-	text-decoration: none;
-}
-
-#contenido .item .votacion .comentario_item, #contenido .item .votacion .guardar_item {
+#contenido .item .votacion .comentario_item,#contenido .item .votacion .guardar_item
+{
 	float: right;
-}
-
-/*media query para hacer responsive design
-esto se hace al final esto hace a dos columnas 
-los articles*/
-@media screen and (min-width: 800px) {
-	#contenido {
-		overflow: hidden;
-	}
-
-	#contenido .item {
-		float: left; /*no olvidarce que cuando se hace
-		float al padre hay que darle overflow:
-		hidden*/
-		width: 49%;
-	}
-	/*nth-child(odd) = elementos impares*/
-	#contenido .item:nth-child(odd) {
-		margin-right: 2%;
-	}
-}
-/*esto es responsive para un header centrado 
-hay que activar text aling, margin: 0 auto y 
-width:800px en el header*/
-/*@media screen and (max-width: 800px) {
-	header{
-		width:98%;
-	}
-}*/
-
-/*media query para mostrar el video*/
-@media screen and (min-width: 1000px) {
-	aside {
-		display: block;
-		/*margin: auto;
-		margin-top: 1em;*/ /*estos estilos son para
-		que este centrado arriba */
-		float: right;
-		margin: 1em;
-		width: 20%;
-	}
-	aside video {
-		width: 100%;
-	}
 }
