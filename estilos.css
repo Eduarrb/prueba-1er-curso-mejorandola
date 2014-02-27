@@ -146,10 +146,11 @@ header #logo img
 	padding-right: 0.5em;
 	margin-right: 0.5em;
 	width: 52px;
-	-webkit-transition: .3s;
 }
 header #logo img:hover 
 {
+	-webkit-transition: .5s;/*transición para que
+	no regrece el logo*/
 	-webkit-transform: rotate(360deg);
 }
 nav 
@@ -311,6 +312,14 @@ aside
 	}
 	aside video{
 		width: 100%;
+	}
+}
+@media screen and (max-width: 480px){
+	#contenido .item .datos_item {
+		margin: 0.5em 1em 0 0;
+	}
+	#contenido .item .titulo_item {
+		padding: 0.5em 1em 0 0;
 	}
 }
 /*esto es responsive para un header centrado 
