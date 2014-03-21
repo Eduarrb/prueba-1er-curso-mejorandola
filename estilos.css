@@ -212,6 +212,7 @@ aside
 #contenido
 {
  	margin: 1em;
+ 	
 }
 #contenido .item
 {
@@ -330,3 +331,23 @@ width:800px en el header*/
 		width:98%;
 	}
 }*/
+
+
+/* FORMULARIO */
+.formulario
+{
+	padding: 1em;
+	text-align: right;
+	margin-bottom: 0;
+	display: none;
+}
+.formulario input
+{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"]
+{
+
+}
