@@ -8,6 +8,7 @@ var $form = $('#formulario'),
 function mostrarFormulario(){
 	$form.slideToggle();
 	$list.slideToggle();
+	// $('aside').hide();
 	return false;
 }
 
@@ -24,10 +25,13 @@ function agregarPost(e){
 	$clone.hide();
 
 	$list.prepend($clone);//pone el clon al inicio del contenido
-	mostrarFormulario();
+	mostrarFormulario(); // muestra la lista
+
+	$titulo.val(""); //pone en blanco los parametros ya puestos
+	$url.val("");
 
 	$clone.fadeIn();
-	return false
+	// return false //ya no se necesita con preventDefault
 }
 
 	// Eventos
