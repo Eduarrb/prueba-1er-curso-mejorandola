@@ -24,6 +24,8 @@ function mostrarFormulario(){
 	$form.slideToggle();
 	$list.slideToggle();
 	$('video').slideToggle();
+	$('#geo').slideToggle();
+	$('#clima').slideToggle();
 	return false;
 }
 
