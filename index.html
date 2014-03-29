@@ -7,9 +7,10 @@
 	<meta name="viewport" content="width=device-width, minimun-scale=1, maximun-scale=1"/><!-- minumun y maximun no hace ningun tipo de zoom en el dispositivo -->
 	<title>1ra clase Mejorando.la</title>
 	<!-- fuente jalada de google web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="normalize.css"><!-- normalize.css v2.1.3 -->
 	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<script src="prefixfree.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -18,7 +19,8 @@
 		</figure>
 		<h1>Primera clase mejorando.la conceptos básicos de Html5, CSS3 y JavaScript</h1>
 		<figure id="avatar">
-			<img src="avatar.jpg">
+			<!-- <img src="avatar.jpg"> -->
+			<!-- lo comentamos para jalar el avatar con ajax -->
 		</figure>
 	</header>
 	<!-- para el menu de navegacion -->
@@ -38,6 +40,7 @@
 		<input type="submit" value="Enviar">
 	</form>
 	<aside>
+		<div id="geo"></div>
 		<video width="320" height="240" controls autoplay>
   			<source src="lecturas.m4v" type="video/mp4">
  			<source src="lecturas.ogg" type="video/ogg">
@@ -178,8 +181,11 @@
 			<strong>Powered by Sh@dow</strong>
 		</p>
 		<p>Mejorando.la 2014</p>
+		<div class="logos"></div>
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="formulario.js"></script>
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
 </body>
 </html>

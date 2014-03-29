@@ -3,7 +3,7 @@ var $form 	= $('#formulario'),
 	$url 	= $('#url'),
 	$button = $('#mostrar-form'),
 	$list 	= $('#contenido'),
-	$post 	= $('.item').first();
+	$post 	= $('.item').first(),
 
 	ls		= localStorage,
 	ss 		= sessionStorage;
