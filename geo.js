@@ -10,7 +10,7 @@ $(function(){
 		var lat  = posicion.coords.latitude;
 		var lon  = posicion.coords.longitude;
 		var mapa = new Image();
-		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=17&size=270x300&sensor=false&center="+lat+","+lon;
+		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=17&size=270x150&sensor=false&center="+lat+","+lon;
 		$('#geo').append(mapa);
 
 		obtenerGeoInformacion(lat, lon);//esto es para se ejecute en ajax
